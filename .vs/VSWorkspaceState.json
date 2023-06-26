@@ -2,9 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\public",
+    "\\public\\png",
     "\\src",
     "\\src\\components"
   ],
-  "SelectedNode": "\\src\\components\\MyButton.Module.css",
+  "SelectedNode": "\\src\\App.css",
   "PreviewInSolutionExplorer": false
 }
