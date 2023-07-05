@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&family=Montserrat:wght@500&display=swap');
+.loader_infinite {
+    width: 109px;
+    height: 79px;
+    background: white;
+    display: inline-block;
+    position: relative;
+    animation: fill 1s linear infinite;
+}
+
+.loader_once {
+    width: 109px;
+    height: 79px;
+    background: white;
+    display: inline-block;
+    position: relative;
+    animation: fill_once 1s linear 1 forwards;
+}
+.loader_animation_once {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("urbanbot.png");
+   
+}
+
+.loader_animation {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    animation: img 3s infinite;
+}
+.loader_counter {
+
+    position:relative;
+    height: 20px;
+    bottom: -90px;
+    
+    width: 100%;
+}
+
+
+
+.loader_counter::after{
+    content: attr(percent) '%';
+    font: 400;
+}
+ 
+
+
+@keyframes img {
+    0%, 32% {
+        background-image: url("urbanbot.png");
+    }
+
+    33%, 65% {
+        background-image: url("urbanbot(2).png");
+    }
+
+    66%, 100% {
+        background-image: url("urbanbot(3).png");
+    }
+}
+
+
+@keyframes fill_once {
+    0% {
+    }
+    50% {
+        box-shadow: 0 var(--sh-y*0.5) inset #24B3F2;
+    }
+    
+    100% {
+        box-shadow: 0 var(--sh-y) inset #24B3F2; 
+        
+    }
+}
+    
+@keyframes fill {
+        0%{
+
+    }
+
+    10% {
+        box-shadow: 0 -10px inset #24B3F2;
+    }
+    50%{
+        box-shadow: 0 -40px inset #24B3F2;
+    }
+    100% {
+        box-shadow: 0 -80px inset #24B3F2;
+    }
+}
+
